@@ -5,7 +5,7 @@ Library     AppiumLibrary
 TC1
     Open Application    remote_url=http://localhost:4723/wd/hub
     ...    platformName=android
-    ...    deviceName=realme7i
+    ...    deviceName=realme5i
     ...    app=C:${/}Users${/}40032476${/}Downloads${/}khan-academy-7-3-2.apk
     ...    noReser=true
     Set Appium Timeout    30s
@@ -62,5 +62,7 @@ TC2
     Wait Until Page Contains Element      android=UiSelector().text("Arts and humanities")
     Click Element     android=UiSelector().text("Arts and humanities")
 
-    &{dic_arg}      Create Dictionary       strategy=android uiavatomator
-    ...     selector=
+    &{dic_arg}        Create Dictionary       strategy=android Uiautomator
+    ...   selector=UiSelector().text("Art of Asia")
+    Execute Script      mobile: scroll    &{dic_arg}
+    Click Element     android=UiSelector().text("Art of Asia")
