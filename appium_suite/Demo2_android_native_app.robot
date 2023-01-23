@@ -26,8 +26,9 @@ TC1 Sign Up
      Input Text    xpath=//*[@content-desc='Last name']    kothabali
      Wait Until Page Contains Element    xpath=//*[@text='Birthday']
      Click Element    xpath=//*[@text='Birthday']
-     Wait Until Page Contains Element    xpath=//*[@text='Jun']
-     Click Element    xpath=//*[@text='Jun']
+     Wait Until Page Contains Element    xpath=(//*[@resource-id='android:id/numberpicker_input'])[2]
+     Click Element    xpath=(//*[@resource-id='android:id/numberpicker_input'])[2]
+     Clear Text    xpath=(//*[@resource-id='android:id/numberpicker_input'])[2]
      Input Text    xpath=(//*[@resource-id='android:id/numberpicker_input'])[2]      Dec
      Wait Until Page Contains Element    xpath=//*[@text='01']
      Click Element    xpath=//*[@text='01']
@@ -37,7 +38,13 @@ TC1 Sign Up
      Input Text    xpath=//*[@resource-id='android:id/numberpicker_input']    2022
 
 TC2
-      
+    Open Application    remote_url=http://localhost:4723/wd/hub
+    ...    platformName=android
+    ...    deviceName=realme7i
+    ...    appPackage=org.Khanacademy.android
+    ...    appActivity=org.Khanacademy.andriod.ui.library.MainActivity
+    ...    noReset=true
+
 
 
      
