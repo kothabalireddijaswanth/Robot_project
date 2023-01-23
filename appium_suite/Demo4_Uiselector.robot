@@ -5,7 +5,7 @@ Library     AppiumLibrary
 TC1
     Open Application    remote_url=http://localhost:4723/wd/hub
     ...    platformName=android
-    ...    deviceName=realme5i
+    ...    deviceName=realme5i_new
     ...    app=C:${/}Users${/}40032476${/}Downloads${/}khan-academy-7-3-2.apk
     ...    noReser=true
     Set Appium Timeout    30s
