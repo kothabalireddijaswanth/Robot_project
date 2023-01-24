@@ -29,3 +29,9 @@ TC1
     Log To Console    ${alert_text}
     Click Element    xpath=//div[@class='closeDlgIframe']
     Element Should Contain    xpath=//a[@title='To Dashboard']    jaswanth reddi gari
+
+TC2
+    Open Browser        browser=chrome
+    @{output}       Run Keyword And Ignore Error    Click Element    xpath=//a
+    Log To Console    @{output}
+
