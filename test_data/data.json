@@ -1,0 +1,19 @@
+
+{
+  "id": 452,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "doggie-abe",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
